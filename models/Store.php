@@ -19,7 +19,8 @@ class Store {
     }
 
     public function getCardProduct(Product $_product) {
-        echo '<div class="card w-50 mx-auto">';
+        echo '<div class="card">';
+        echo '<img class="card-img-top" src="' . $_product->getImg() . '" alt="' . $_product->getName() . '">';
         echo '<h2 class="card-title">' . $_product->getName() . '</h2>';
         echo '<p>Prezzo: ' . $_product->getPrice() . ' €</p>';
         echo '<p> Categoria: ' . $_product->getCategory()->getName() . '</p>';

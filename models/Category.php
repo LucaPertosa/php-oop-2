@@ -1,6 +1,6 @@
 <?php
 
-class Category {
+class Category{
     private $name;
 
     public function __construct($_name) {
